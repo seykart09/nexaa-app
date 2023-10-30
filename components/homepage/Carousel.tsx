@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react'
-import Image from 'next/image'
+import Image from '@/node_modules/next/image';
 import CarouselImage1 from '@/assets/personalized-link.png';
 import CarouselImage2 from '@/assets/carousel-img-2.png';
 import CarouselImage3 from '@/assets/carousel-img-3.png';

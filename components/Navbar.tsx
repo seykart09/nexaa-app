@@ -5,8 +5,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import nexaaLogoFull from '@/assets/nexaa-logo-full.svg';
 import nexaaLogoSmall from '@/assets/nexaa-logo-small.svg';
-import Image from 'next/image';
-import Link from "next/link";
+import Image from "@/node_modules/next/image";
+import Link from "@/node_modules/next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
