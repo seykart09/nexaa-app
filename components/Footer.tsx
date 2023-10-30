@@ -24,35 +24,35 @@ export const Footer = () => {
     <div>
         <div className='bg-black py-8 px-4'>
             <nav className="flex justify-between items-center max-container">
-                <a href="/" className="text-3xl font-bold">
+                <Link href="/" className="text-3xl font-bold">
                     <Image
                         src={nexaaLogoFooter}
                         alt=""
                         className="object-contain"
                         width={120}
                     />
-                </a>
+                </Link>
                 <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
                     {navLinks.map((item) => (
                     <li key={item.name}>
-                        <a
+                        <Link
                         href={item.href}
                         className="leading-normal text-sm text-white"
                         >
                         {item.name}
-                        </a>
+                        </Link>
                     </li>
                     ))}
                 </ul>
                 <ul className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
                     {socials.map((item) => (
                     <li key={item.name}>
-                        <a
+                        <Link
                         href={item.href}
                         className="leading-normal text-sm text-white"
                         >
                         {item.icon}
-                        </a>
+                        </Link>
                     </li>
                     ))}
                 </ul>
