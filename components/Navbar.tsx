@@ -65,13 +65,13 @@ const Navbar = () => {
               <AiOutlineClose className="text-4xl" />
             </div>
             <ul className=" lg:hidden flex flex-col items-center justify-center h-full ">
-              {navLinks.map((item) => (
-                <li key={item.label}>
+              {navLinks.map((item, index) => (
+                <li key={index}>
                   <Link
                     href={item.href}
                     className="leading-normal text-lg text-black"
                   >
-                    {item.label}
+                    {item.name}
                   </Link>
                 </li>
               ))}
