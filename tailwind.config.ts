@@ -13,6 +13,19 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'space-grotesk': ['Space Grotesk', 'sans-serif'],
+        'sharp-grotesk': ['Schibsted Grotesk', 'sans-serif']
+      },
+      colors: {
+        'black': '#1C1C1C',
+        'primary': '#214ADC',
+        'secondary': '#77FE74',
+        'alternate': '#F2F2F2',
+      },
+      boxShadow: {
+        'button-shadow': '0px 4px 24px 0px rgba(0, 0, 0, 0.20);',
+      }
     },
   },
   plugins: [],
