@@ -6,7 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import nexaaLogoFull from '@/assets/nexaa-logo-full.svg';
 import nexaaLogoSmall from '@/assets/nexaa-logo-small.svg';
 import Image from 'next/image';
-import Link from "/next/link";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

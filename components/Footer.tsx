@@ -3,7 +3,7 @@ import nexaaLogoFooter from '@/assets/logo-footer.svg';
 import Image from 'next/image'
 import { RiTwitterXLine } from "react-icons/ri";
 import { BiLogoInstagramAlt, BiLogoLinkedinSquare} from "react-icons/bi";
-
+import Link from 'next/link';
 export const Footer = () => {
     const navLinks = [
         { name: 'Tools', href: '#', current: true },
