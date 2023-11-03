@@ -5,10 +5,10 @@ import dots from '@/assets/dots.svg';
 const ThreeColumnSection = (data:any) => {
 
   return (
-    <div className="flex justify-center w-full space-x-[83px] pt-16">
+    <div className="flex flex-col md:flex-row justify-center w-full lg:space-x-[83px] pt-16">
         {
           data.data.map((item:any, index:number) => (
-            <div key={index} className='w-[322px] p-2'>
+            <div key={index} className='w-full lg:w-[322px] p-2'>
               <div className='mb-8'>
                       <div>
                           <Image
@@ -18,7 +18,7 @@ const ThreeColumnSection = (data:any) => {
                           />
                       </div>
                       <div className='pt-4'>
-                          <h5 className='text-lg font-medium text-black mb-2'>{item.header}</h5>
+                          <h1 className='text-lg lg:text-xl text-black mb-2 antialiased'>{item.header}</h1>
                           <p className=''>{item.text}</p>
                       </div>
               </div>

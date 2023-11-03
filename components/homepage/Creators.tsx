@@ -6,7 +6,7 @@ import TwoGridView from './TwoGridView';
 
 const impressions = [
     {
-      "header":"Get live insights of impressions, reach on your contents",
+      "header":"Thousands of creators to elevate your brand. ",
       "buttonText":"Get Started for Free",
       "image": findCreators,
     },

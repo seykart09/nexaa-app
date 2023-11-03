@@ -17,14 +17,14 @@ const Navbar = () => {
   ];
   return (
     <>
-      <header className="sm:px-8 px-4 py-2 z-10 w-full fixed top-0 left-0 right-0 bg-white">
-        <nav className="flex justify-between items-center max-container">
+      <header className="sm:px-8 px-4 py-4 z-40 w-full fixed top-0 left-0 right-0 bg-white shadow-sm">
+        <nav className="flex justify-between items-center max-container section">
           <Link href="/" className="text-3xl font-bold">
             <Image
                 src={nexaaLogoFull}
                 alt=""
                 className="object-contain"
-                width={120}
+                width={100}
             />
           </Link>
           <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
@@ -39,34 +39,30 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
+          <div className="flex gap-2 text-lg leading-normal max-lg:hidden wide:mr-24">
             <button className="py-4 px-8 bg-gray-100 rounded-xl text-sm">Sign in</button>
-            <button className="py-4 px-8 bg-primary  text-white rounded-xl text-sm">Get Started</button>
+            <button className="py-4 px-8 bg-primary hover:bg-[#0F3AD2] text-white rounded-xl text-sm">Get Started</button>
           </div>
-          <div
-            className="hidden max-lg:block cursor-pointer"
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            <RxHamburgerMenu className="text-4xl" />
-          </div>
-        </nav>
-      </header>
-      {isMenuOpen && (
-        <div>
-          <nav className="fixed top-0 right-0 left-0 bottom-0 lg:bottom-auto bg-slate-100  ">
+          <div className="hidden max-lg:flex items-center space-x-4">
+            <button className="py-4 px-8 bg-primary hover:bg-[#0F3AD2] text-white rounded-xl text-sm">Get Started</button>
             <div
-              className="hidden max-lg:block fixed right-0  px-8 py-4 cursor-pointer"
+              className="cursor-pointer"
               onClick={() => {
                 setIsMenuOpen(!isMenuOpen);
               }}
             >
-              <AiOutlineClose className="text-4xl" />
+              {!isMenuOpen?<RxHamburgerMenu className="text-4xl" />:<AiOutlineClose className="text-4xl" />}
             </div>
-            <ul className=" lg:hidden flex flex-col items-center justify-center h-full ">
+          </div>
+          
+        </nav>
+      </header>
+      {isMenuOpen && (
+        <div className="z-40">
+          <div className="fixed top-[84px] right-0 left-0 bottom-0 lg:bottom-auto bg-white shadow h-fit">
+            <ul className=" lg:hidden flex flex-col h-full container px-4 py-4">
               {navLinks.map((item, index) => (
-                <li key={index}>
+                <li key={index} className="py-3">
                   <Link
                     href={item.href}
                     className="leading-normal text-lg text-black"
@@ -76,7 +72,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </nav>
+          </div>
         </div>
       )}
     </>

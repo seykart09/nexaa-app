@@ -3,6 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: SharpGroteskMd;
+  src: url("fonts/SharpGrotesk-Md.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SharpGroteskLt;
+  src: url("fonts/SharpGrotesk-Lt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: FuturaBk;
+  src:  url("fonts/FutuBk_.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: FuturaMd;
+  src:  url("fonts/FutuMd_.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: FuturaLt;
+  src:  url("fonts/FutuLt_.ttf") format("truetype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -19,5 +44,33 @@
 
 body {
   color: black;
-  background: white
+  background: white;
+}
+
+.section {
+  @apply lg:w-[100%] w-[100%] mx-auto max-w-[1340px];
+}
+
+h1, ul, button{
+  font-family: SharpGroteskMd;
+}
+
+h2 {
+  font-family: SharpGroteskLt;
+}
+
+h5{
+  font-family: FuturaMd;
+}
+
+h6{
+  font-family: FuturaBk;
+}
+
+p{
+  font-family: FuturaLt;
+}
+
+button, input{
+  transition: 0.4s;
 }

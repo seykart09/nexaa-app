@@ -16,14 +16,14 @@ export const Footer = () => {
 
     const socials = [
         { name: 'Linkedin', icon:<BiLogoLinkedinSquare width={100}/>, href: '#' },
-        { name: 'Instagram', icon:<BiLogoInstagramAlt/>, href: '#' },
-        { name: 'X', icon:<RiTwitterXLine/>, href: '#' },
+        { name: 'Instagram', icon:<BiLogoInstagramAlt width={100}/>, href: '#' },
+        { name: 'X', icon:<RiTwitterXLine width={100}/>, href: '#' },
     ]
 
   return (
     <div>
         <div className='bg-black py-8 px-4'>
-            <nav className="flex justify-between items-center max-container">
+            <nav className="flex justify-between items-center max-container section">
                 <Link href="/" className="text-3xl font-bold">
                     <Image
                         src={nexaaLogoFooter}
@@ -44,7 +44,7 @@ export const Footer = () => {
                     </li>
                     ))}
                 </ul>
-                <ul className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
+                <ul className="flex gap-2 text-lg leading-normal font-montserrat max-lg:hidden wide:mr-24">
                     {socials.map((item) => (
                     <li key={item.name}>
                         <Link
@@ -58,14 +58,16 @@ export const Footer = () => {
                 </ul>
             </nav>
         </div>
-        <div className='bg-grey-100 py-7 max-container px-4'>
-            <div className="flex w-full justify-between">
-                <h1 className='text-xs'>Copyright © 2023 Nexaa. All rights reserved</h1>
-                <div className='flex'>
-                    <ul className='flex space-x-10 text-xs'>
-                        <li>Privacy</li>
-                        <li>Terms & Conditions</li>
-                    </ul>
+        <div className='bg-grey-100 py-7 px-4'>
+            <div className='max-container section'>
+                <div className="flex flex-col flex-col-reverse items-center md:flex-row w-full justify-between gap-y-4 md:gap-y-0">
+                    <h1 className='text-xs'>Copyright © 2023 Nexaa. All rights reserved</h1>
+                    <div className='flex'>
+                        <ul className='flex space-x-10 text-xs'>
+                            <li>Privacy</li>
+                            <li>Terms & Conditions</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -15,7 +15,12 @@ const config: Config = {
       },
       fontFamily: {
         'space-grotesk': ['Space Grotesk', 'sans-serif'],
-        'sharp-grotesk': ['Schibsted Grotesk', 'sans-serif']
+        'sharp-grotesk-lt': 'SharpGroteskLt',
+        'sharp-grotesk-md': 'SharpGroteskMd',
+        'futura-lt': 'FuturaLt',
+        'futura-bk': 'FuturaBk',
+        'futura-md': 'FuturaMd',
+        'test-grotesk': ['Schibsted Grotesk', 'sans-serif']
       },
       colors: {
         'black': '#1C1C1C',

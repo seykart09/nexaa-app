@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { BsArrowUpRight } from "react-icons/bs";
 import Progress from '../shared/Progress';
 
+
 interface CarouselContentProp {
     header: string;
     data: string;
@@ -24,11 +25,13 @@ const CarouselContent = ({header, data, currentIndex, index, state} : CarouselCo
                                 src={dots}
                                 alt=""
                                 className="object-contain"
+                                width={32}
+                                height={32}
                             />
                         </div>
-                        <div>
-                            <h5 className='text-xl text-blue-700'>{header}</h5>
-                            <p>{data}</p>
+                        <div className='w-full md:w-[381px] lg:w-[318px]'>
+                            <h1 className='text-lg md:text-xl text-blue-700 antialiased'>{header}</h1>
+                            <p className='text-base'>{data}</p>
                         </div>
                         <div>
                             <BsArrowUpRight className='text-blue-700'/>

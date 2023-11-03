@@ -19,9 +19,9 @@ const unlockCollaborations = [
 
 const UnlockCollaborations = () => {
   return (
-    <section className='container mx-auto section py-[100px]'>
+    <section className='container mx-auto px-5 py-[100px]'>
         <div className='text-center'>
-        <h6 className='text-3xl'>Unlock Tailored Collaborations for influencers and creators</h6>
+        <h1 className='text-[22px] max-w-[345px] lg:text-5xl lg:text-[40px] md:max-w-[692px] mx-auto antialiased'>Unlock Tailored Collaborations for influencers and creators</h1>
         </div>
         <ThreeColumnSection data={unlockCollaborations}/>
     </section>

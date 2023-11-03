@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/shared/Navbar';
 import Carousel from '@/components/homepage/Carousel'
 import Banner from '@/components/homepage/Banner';
 import SmallImages from '@/components/homepage/SmallImages';
@@ -7,15 +7,15 @@ import EffortlessCollaboration from '@/components/homepage/EffortlessCollaborati
 import Impressions from '@/components/homepage/Impressions';
 import Creators from '@/components/homepage/Creators';
 import ElevateBrand from '@/components/homepage/ElevateBrand';
-import { Footer } from '@/components/Footer';
+import { Footer } from '@/components/shared/Footer';
 
 export default function Home() {
   return (
     <div
-      className="min-h-screen relative font-sharp-grotesk"
+      className="min-h-screen relative font-test-grotesk"
     >
       <Navbar />
-      <div>
+      <div className='w-screen'>
         <Banner />
 
         <SmallImages />
