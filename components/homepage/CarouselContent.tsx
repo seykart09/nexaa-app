@@ -34,7 +34,7 @@ const CarouselContent = ({header, data, currentIndex, index, state} : CarouselCo
                             <p className='text-base'>{data}</p>
                         </div>
                         <div>
-                            <BsArrowUpRight className='text-blue-700'/>
+                            <BsArrowUpRight className='text-primary'/>
                         </div>
                 </Link>
                 <Progress currentIndex={currentIndex} index={index} progress={state}/>

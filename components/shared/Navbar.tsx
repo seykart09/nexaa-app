@@ -40,7 +40,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex gap-2 text-lg leading-normal max-lg:hidden wide:mr-24">
-            <button className="py-4 px-8 bg-gray-100 rounded-xl text-sm">Sign in</button>
+            <button className="py-4 px-8 bg-gray-100 rounded-xl text-sm">Login</button>
             <button className="py-4 px-8 bg-primary hover:bg-[#0F3AD2] text-white rounded-xl text-sm">Get Started</button>
           </div>
           <div className="hidden max-lg:flex items-center space-x-4">
