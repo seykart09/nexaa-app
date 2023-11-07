@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
     { name: 'Tools', href: '#', current: true },
-    { name: 'Find Influencers & Creators', href: '#', current: false },
+    { name: 'Find Influencers & Creators', href: 'find-creators', current: false },
     { name: 'Pricing', href: '#', current: false },
   ];
   return (

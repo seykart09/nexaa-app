@@ -107,7 +107,7 @@ const ElevateBrand = () => {
               </div>
           </div>
         </div>
-        <div className='pt-[60px] px-5 md:px-4'>
+        <div className='pt-[60px]'>
           <SliderView data={content}/>
         </div>
     </section>

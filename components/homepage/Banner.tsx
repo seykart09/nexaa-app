@@ -131,7 +131,7 @@ const Banner = () => {
             </div>
           </div>   
 
-          <div className='pt-8 px-5 md:px-4'>
+          <div className='pt-8'>
             <SliderView data={content}/>
           </div>
         </section>

@@ -22,9 +22,12 @@ const SliderView = ({data}:any) => {
                 animationEnded(s:any) {
                     s.moveToIdx(s.track.details.abs + 5, true, animation)
                 },
-                slides: { perView: 2.75, spacing: 15 },
+                slides: { perView: 3.75, spacing: 15 },
             },
             "(min-width: 1000px)": {
+                slides: { perView: 7.75, spacing: 15 },
+            },
+            "(min-width: 1500px)": {
                 slides: { perView: 8.5, spacing: 15 },
             },
         },
