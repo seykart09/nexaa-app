@@ -32,8 +32,8 @@ useEffect (() => {
     if (progress < 100){
         setTimeout(() => 
         {
-            setProgress(prev => prev + 2);
-        }, 50)
+            setProgress(prev => prev + 2 );
+        }, 100)
     }
     else{
         setCurrentIndex(currentIndex => currentIndex + 1);

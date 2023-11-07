@@ -18,7 +18,7 @@ const Progress = ({currentIndex, index ,progress} : ProgressBarProp) => {
           {
           isProgressShowing 
           && 
-          <div className="h-0.5 bg-blue-700" style={{ width: progress }}></div>
+          <div className="h-0.5 bg-blue-700" style={{ width: progress, transition: "width 0.5s ease-out" }}></div>
           }
         </div>
     </div>

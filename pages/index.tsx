@@ -8,6 +8,7 @@ import Impressions from '@/components/homepage/Impressions';
 import Creators from '@/components/homepage/Creators';
 import ElevateBrand from '@/components/homepage/ElevateBrand';
 import { Footer } from '@/components/shared/Footer';
+import { Testimonials } from '@/components/homepage/Testimonials';
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
         <EffortlessCollaboration />
         
         <Creators />
+
+        <Testimonials />
         
         <ElevateBrand />
 
