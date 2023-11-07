@@ -4,13 +4,13 @@ import { useKeenSlider } from 'keen-slider/react'
 import Image from 'next/image'
 
 
-const SliderView = ({data}) => {
+const SliderView = ({data}:any) => {
    
     const [currentSlide, setCurrentSlide] = React.useState(0)
     const [loaded, setLoaded] = useState(false)
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         initial: 0,
-        slideChanged(slider) {
+        slideChanged(slider:any) {
         setCurrentSlide(slider.track.details.rel)
         },
         created() {
