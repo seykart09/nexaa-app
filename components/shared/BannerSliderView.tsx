@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const animation = { duration: 30000, easing: (t: number) => t }
 
-const SliderView = ({data}) => {
+const SliderView = ({data}:any) => {
    
     const [sliderRef] = useKeenSlider<HTMLDivElement>({
         breakpoints: {
@@ -19,13 +19,13 @@ const SliderView = ({data}) => {
         loop: true,
         renderMode: "performance",
         // drag: false,
-        created(s) {
+        created(s:any) {
             s.moveToIdx(5, true, animation)
         },
-        updated(s) {
+        updated(s:any) {
             s.moveToIdx(s.track.details.abs + 5, true, animation)
         },
-        animationEnded(s) {
+        animationEnded(s:any) {
             s.moveToIdx(s.track.details.abs + 5, true, animation)
         },
         slides: {
