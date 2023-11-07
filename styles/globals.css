@@ -55,6 +55,10 @@ h1, ul, button{
   font-family: SharpGroteskMd;
 }
 
+ul > li.h2{
+  font-family: SharpGroteskLt;
+}
+
 h2 {
   font-family: SharpGroteskLt;
 }

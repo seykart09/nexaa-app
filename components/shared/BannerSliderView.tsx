@@ -13,7 +13,7 @@ const SliderView = ({data}:any) => {
                 slides: { perView: 2.75, spacing: 15 },
             },
             "(min-width: 1000px)": {
-                slides: { perView: 5.5, spacing: 15 },
+                slides: { perView: 6.5, spacing: 15 },
             },
         },
         loop: true,
@@ -52,7 +52,7 @@ const SliderView = ({data}:any) => {
                                 <p className='text-sm'>{item.followers} Followers</p>
                                 <div className='flex flex-wrap gap-2'>
                                     {item.tags.map((tag:string, index:number) => 
-                                        <p key={index} className='text-xs bg-alternate py-1 px-2 rounded-full'>{tag}</p>
+                                        <p key={index} className='text-xs bg-grey py-1 px-2 rounded-full'>{tag}</p>
                                     )}
                                 </div>
                             </div>

@@ -27,6 +27,7 @@ const config: Config = {
         'primary': '#214ADC',
         'secondary': '#77FE74',
         'alternate': '#F2F2F2',
+        'grey': '#F0F0F0',
       },
       boxShadow: {
         'button-shadow': '0px 4px 24px 0px rgba(0, 0, 0, 0.20);',

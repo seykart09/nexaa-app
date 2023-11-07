@@ -25,7 +25,7 @@ const SliderView = ({data}:any) => {
                 slides: { perView: 2.75, spacing: 15 },
             },
             "(min-width: 1000px)": {
-                slides: { perView: 7.5, spacing: 15 },
+                slides: { perView: 8.5, spacing: 15 },
             },
         },
         loop: true,
